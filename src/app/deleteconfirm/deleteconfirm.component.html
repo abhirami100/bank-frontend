@@ -1,0 +1,5 @@
+<div class="del" *ngIf="item" class="border  w-25 mt-5 p-5 mx-auto">
+    <h5 class="text-center">Are you Sure, do you want to delete this account {{item}}</h5>
+    <button (click)="delete()" id="s4" class="btn btn-danger ms-5">Yes</button>&nbsp;&nbsp;&nbsp;
+    <button (click)="cancel()" id="s5" class="btn btn-success">No</button>
+</div>

@@ -1,0 +1,44 @@
+    <div class="bordr">
+    
+      <div id="log">
+          
+        <h1>
+          Login
+        </h1>
+        <form (ngSubmit)="login()" [formGroup]="loginForm">
+            <div>
+              <input name="acno" formControlName="acno" type="text" placeholder="Account Number"><br><br>
+      
+            </div>
+            <div *ngIf="this.loginForm.get('acno')?.touched&&this.loginForm.get('acno')?.errors" style="color:white ;">Invalid Account Number</div>
+      
+            <div>
+              <input name="pswd" formControlName="pswd" type="password" placeholder="Password"><br><br>
+      
+            </div>
+            <div *ngIf="this.loginForm.get('pswd')?.touched&&this.loginForm.get('pswd')?.errors" style="color:white ;">Invalid Password</div>
+      
+      
+            
+            <!-- <a href="">forgotten password?</a><br><br> -->
+            <!-- <button>Create New Account</button> -->
+      
+      
+      
+          <div class="btn">
+            <button type="submit">Login</button>
+            <span id="p1">New User? Click here to <a href="view-register">Register</a>
+            </span>
+      
+         
+          </div>
+        </form>
+        <img  src="https://wallpapercave.com/wp/wp4063163.jpg" />
+      </div>
+      </div>
+  
+  
+  
+  
+
+  
